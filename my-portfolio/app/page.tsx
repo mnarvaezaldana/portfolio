@@ -34,54 +34,143 @@ export default function Home() {
   return (
     <main>
 
-      <section id="home" className="section">
-        <h2>Hello, My name is Marcos Armando Narvaez Aldana.</h2>
-        <p>
-          I am a student at the University of the South, in Merida Yucatan.
-          This website presents my professional career interests and academic work.
-          It also includes a dynamic activity about computer parts and technology vocabulary.
-        </p>
-      </section>
+      <span class="eyebrow">Ingeniería en Sistemas Computacionales</span>
+      <h1>Mini Código de Ética Personal</h1>
+      <p class="subtitle">
+        Principios que orientan mi conducta como estudiante y futuro profesional
+        responsable del diseño, desarrollo y uso de soluciones tecnológicas.
+      </p>
+    </header>
 
-      <section id="essay" className="section">
-        <h2>How to Improve Your Skills Solving Problems</h2>
-        <p>
-          Since I've been working as a software developer, I've encountered multiple problems related to compatibility between tools versions, nevertheless
-          I've been capable of fix them just within a couple of hours after browsing on the web. However one day I faced an issue that I still remember these days
-        </p>
-        <p>
-          I was working on an android project written in Java, some changes were asked me to do by my boss, so I thought it would be something fast, since the changes
-          seemed to be small.
-        </p>
-        <p>
-          The first time I saw the logs on red telling me there was an issue I didn't think about something critical, I thought on something like a semicolon been missed,
-          so I deleted cache, clean the project and re run it, but the issue persisted. I searched on the Internet about the issue and I found nothing but recommendations,
-          I didn't find any clear solution.
-        </p>
-        <p>
-          After two days I was still unable to fix the issue, so I contacted my boss asking for help. He told me he wasn't aware tat the project had that issue, and he already
-          encountered before, so he told me how to fix it.
-        </p>
-        <p>
-          The specific steps were to download a library, clean cache, install the library and clean cache again. After those steps I was able to run the project so happily it was
-          fixed with the help from my boss. So I learnt is ok to seek for help from your superiors, that is also part of their duties and also the importance of keeping the libraries
-          updated.
-          </p>
-      </section>
+    <section class="section">
+      <h2 class="section-title">Introducción</h2>
+      <p>
+        Como futuro Ingeniero en Sistemas Computacionales, reconozco que la tecnología
+        tiene un impacto directo en las personas, las organizaciones y la sociedad.
+        Por ello, me comprometo a actuar con responsabilidad, honestidad y profesionalismo
+        en el desarrollo de software y en todas las actividades relacionadas con mi profesión.
+      </p>
+    </section>
 
-      <section id="activity" className="section">
-        <h2>Technology Vocabulary Activity</h2>
-        <p>Click the button to display a technology word and its definition:</p>
+    <section class="principles-grid">
+      <article class="card">
+        <span class="card-number">01</span>
+        <div class="icon">🤝</div>
+        <h2>Honestidad</h2>
 
-        <button onClick={showWord}>Show Word</button>
+        <span class="label">Principio</span>
+        <p>
+          Actuar con transparencia, sin alterar información ni atribuirme el trabajo
+          realizado por otras personas.
+        </p>
 
-        {selectedWord && (
-          <div className="word-box" style={{ marginTop: "15px" }}>
-            <h3>{selectedWord.term}</h3>
-            <p>{selectedWord.definition}</p>
-          </div>
-        )}
-      </section>
+        <span class="label">Ejemplo de aplicación</span>
+        <p>
+          Si encuentro un error en un sistema desarrollado por mí, lo reportaré de inmediato
+          y trabajaré para solucionarlo en lugar de ocultarlo.
+        </p>
+      </article>
+
+      <article class="card">
+        <span class="card-number">02</span>
+        <div class="icon">✅</div>
+        <h2>Responsabilidad</h2>
+
+        <span class="label">Principio</span>
+        <p>
+          Desarrollar software de calidad, minimizar errores y considerar el impacto
+          que tendrá en los usuarios.
+        </p>
+
+        <span class="label">Ejemplo de aplicación</span>
+        <p>
+          Antes de publicar una aplicación, realizaré pruebas suficientes para reducir
+          fallos que puedan afectar a los clientes.
+        </p>
+      </article>
+
+      <article class="card">
+        <span class="card-number">03</span>
+        <div class="icon">🔒</div>
+        <h2>Respeto por la privacidad</h2>
+
+        <span class="label">Principio</span>
+        <p>
+          Proteger la información personal, sensible y confidencial de los usuarios.
+        </p>
+
+        <span class="label">Ejemplo de aplicación</span>
+        <p>
+          No compartiré bases de datos, contraseñas ni información sensible sin autorización,
+          y aplicaré buenas prácticas de seguridad.
+        </p>
+      </article>
+
+      <article class="card">
+        <span class="card-number">04</span>
+        <div class="icon">📚</div>
+        <h2>Aprendizaje continuo</h2>
+
+        <span class="label">Principio</span>
+        <p>
+          Mantenerme actualizado sobre tecnologías, herramientas y buenas prácticas
+          relacionadas con mi profesión.
+        </p>
+
+        <span class="label">Ejemplo de aplicación</span>
+        <p>
+          Dedicaré tiempo al estudio de nuevos lenguajes, arquitecturas, metodologías
+          y tecnologías de desarrollo de software.
+        </p>
+      </article>
+
+      <article class="card">
+        <span class="card-number">05</span>
+        <div class="icon">👥</div>
+        <h2>Trabajo en equipo</h2>
+
+        <span class="label">Principio</span>
+        <p>
+          Colaborar con respeto, comunicación, apertura y disposición para ayudar
+          a los demás integrantes del equipo.
+        </p>
+
+        <span class="label">Ejemplo de aplicación</span>
+        <p>
+          Escucharé las opiniones de mis compañeros durante las revisiones de código
+          y aceptaré críticas constructivas para mejorar mi trabajo.
+        </p>
+      </article>
+
+      <article class="card">
+        <span class="card-number">06</span>
+        <div class="icon">💻</div>
+        <h2>Uso responsable de la tecnología</h2>
+
+        <span class="label">Principio</span>
+        <p>
+          Crear soluciones que beneficien a las personas y evitar el uso de mis conocimientos
+          para engañar, manipular o causar daño.
+        </p>
+
+        <span class="label">Ejemplo de aplicación</span>
+        <p>
+          No participaré en el desarrollo de software destinado a robar información,
+          vulnerar sistemas o manipular deliberadamente a los usuarios.
+        </p>
+      </article>
+    </section>
+
+    <section class="section commitment">
+      <h2 class="section-title">Mi compromiso profesional</h2>
+      <p>
+        Este código de ética representa el compromiso que asumo como estudiante de
+        Ingeniería en Sistemas Computacionales y futuro profesionista. Mi objetivo es
+        utilizar mis conocimientos para desarrollar soluciones tecnológicas útiles,
+        seguras y confiables, actuando con integridad, respeto hacia las personas y
+        responsabilidad social.
+      </p>
+    </section>
 
     </main>
   );
